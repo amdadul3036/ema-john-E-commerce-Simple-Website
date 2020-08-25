@@ -1,23 +1,24 @@
 import React from 'react';
 import fakeData from '../../fakeData';
 import { useState } from 'react';
-
-const shop = () => {
+import './shop.css'
+import Product from '../Product/product';
+const Shop = () => {
     const first10 = fakeData.slice(0,10);
     const [products,setProducts] = useState(first10);
     console.log(fakeData);
     return (
-        <div>
-            <h1>This is Shop</h1>
-            <h3>{products.length}</h3>
-            <ul>
+        <div className="shop-container">
+            <div className="product-container">
                 {
-                    products.map(product => <li>{product.name}</li>)
+                    products.map(product1 => <Product product  ={product1}></Product>)
                 }
-            </ul>
+         </div>
+            <div className="cart-container">
+                <h3>This is cart</h3>
+            </div>
         </div>
     );
 };
 
-export default shop; 
-// It's wrong because "shop" er s hobe capital always. Noile code kaj korbe na
+export default Shop; 
