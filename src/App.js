@@ -38,7 +38,7 @@ function App() {
              </Route>
              {/* Eta (Line 33-35) deya hoy karon by default koi thakbe user dhukar porei. <Shop></Shop> mane dhukar porei shop e thakbe. */}
 
-             <Route path = "/:productKey">
+             <Route path = "/product/:productKey">
                  <ProductDetail></ProductDetail>
              </Route>
              {/* Ei Router * er age dite hobe. Karon * tar niche jakei pabe takei catch kore felbe. */}
