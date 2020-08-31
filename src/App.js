@@ -29,6 +29,11 @@ function App() {
              <Route path="/inventory">
                  <Inventory></Inventory>
              </Route>
+
+             <Route path="/">
+                 <Shop></Shop>  
+             </Route>
+             {/* Eta (Line 33-35) deya hoy karon by default koi thakbe user dhukar porei. <Shop></Shop> mane dhukar porei shop e thakbe. */}
           </Switch>
         </Router>
 
