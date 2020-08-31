@@ -31,7 +31,8 @@ function App() {
                  <Inventory></Inventory>
              </Route>
 
-             <Route path="/">
+             <Route exact path="/">
+               {/* exact na dile ei router er pore joto router asbe tader sobar jonno ei "/" path follow korbe.tai obviously exact dite hobe jodi "/" path er pore ar kono router thake. */}
                  <Shop></Shop>  
              </Route>
              {/* Eta (Line 33-35) deya hoy karon by default koi thakbe user dhukar porei. <Shop></Shop> mane dhukar porei shop e thakbe. */}
