@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import Review from './component/Review/Review';
 import Inventory from './component/Inventory/Inventory';
+import NotFound from './component/NotFound/NotFound';
 
 
 function App() {
@@ -34,6 +35,11 @@ function App() {
                  <Shop></Shop>  
              </Route>
              {/* Eta (Line 33-35) deya hoy karon by default koi thakbe user dhukar porei. <Shop></Shop> mane dhukar porei shop e thakbe. */}
+             
+             <Route path="*">
+                 <NotFound></NotFound>
+                 {/* Jodi keu vul link search dey taile ei * path e jabe. */}
+             </Route>
           </Switch>
         </Router>
 
