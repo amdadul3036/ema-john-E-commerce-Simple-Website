@@ -22,7 +22,7 @@ const Product = (props) => {
         <p>
           <small>Only {props.product.stock} left in stock - Order soon</small>
         </p>
-        <button className ="Main-button" onClick = {() => props.halndleAddProduct(props.product)}>Add to Cart</button>
+        { props.showAddToCart && <button className ="Main-button" onClick = {() => props.halndleAddProduct(props.product)}>Add to Cart</button>}
       </div>
     </div>
   );
