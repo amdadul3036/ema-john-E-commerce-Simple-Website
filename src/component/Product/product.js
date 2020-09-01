@@ -10,7 +10,7 @@ const Product = (props) => {
       <img src={props.product.img} alt = 'Image of the product'></img>
       </div>
       <div>
-        <h4 className="Product-Name"><Link to={"/product/"+props.product.key}>{props.product.name}</Link></h4>
+        <h4 className="Product-Name" style={{ textDecoration: 'none' }}><Link to={"/product/"+props.product.key}>{props.product.name}</Link></h4>
         {/* <Link to={"/"+props.product.key}>{props.product.name}</Link> dibar karon er fole prottek product er link toiri hoy .
         {"/"+props.product.key} beboharer fole product er name er upor click korle tar key er link e jabe ja protteker jonno alada alada. */}
         <br />
