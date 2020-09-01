@@ -3,7 +3,7 @@ import "./product.css";
 import { Link } from "react-router-dom";
 
 const Product = (props) => {
-  console.log(props.product);
+  // console.log(props.product);
   return (
     <div className="Product">
       <div>
