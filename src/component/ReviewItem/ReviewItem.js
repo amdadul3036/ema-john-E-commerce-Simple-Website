@@ -2,7 +2,7 @@ import React from 'react';
 
 const ReviewItem = (props) => {
     console.log(props);
-    const {name, quantity , key} = props.product;
+    const {name, quantity , key } = props.product;
     const reviewItemStyle = {
         borderBottom:'1px solid red', 
         marginBottom: '5px', 
