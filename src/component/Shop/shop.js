@@ -26,8 +26,7 @@ const Shop = () => {
             product.quantity = 1;
             newCart = [...cart, product];
         }
-        count = sameProduct.length;
-        newCart = [...cart,product];
+        
         setCart(newCart);
         addToDatabaseCart(product.key,count);
     }
